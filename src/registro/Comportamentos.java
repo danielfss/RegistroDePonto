@@ -30,7 +30,7 @@ public class Comportamentos {
 			if (opcao.equalsIgnoreCase("a")) {
 				cadastra();
 			} else if (opcao.equalsIgnoreCase("b")) {
-				baterPonto();
+				registraPonto();
 			} else if (opcao.equalsIgnoreCase("c")) {
 				// consultaPonto();
 				System.out.println("Consultar o ponto");
@@ -70,7 +70,7 @@ public class Comportamentos {
 	}
 	
 	
-	public void baterPonto() {
+	public void registraPonto() {
 		System.out.println(listaFuncionarios);
 		
 		String matricula;
@@ -98,5 +98,9 @@ public class Comportamentos {
 		}
 		
 		menuInicial();
+	}
+	
+	public consultaPonto() {
+		
 	}
 }
