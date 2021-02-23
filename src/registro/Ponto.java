@@ -7,19 +7,15 @@ public class Ponto {
 	private String horaEntrada;
 	private String horaSaida;
 	
-	public Ponto(String dataRegistro, String horaEntrada, String horaSaida) {
+	public Ponto(String matricula, String dataRegistro) {
 		this.matricula = matricula;
 		this.dataRegistro = dataRegistro;
-		this.horaEntrada = horaEntrada;
-		this.horaSaida = horaSaida;
+		this.horaEntrada = "";
+		this.horaSaida = "";
 	}
 	
 	public String getMatricula() {
 		return matricula;
-	}
-	
-	public void setMatricula(String matricula) {
-		this.matricula = matricula;
 	}
 	
 	public String getDataRegistro() {

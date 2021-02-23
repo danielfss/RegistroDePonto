@@ -9,26 +9,10 @@ public class Funcionario {
 	
 	
 	public Funcionario(String nome, String matricula, String cargo) {
-//        this.nome = nome;
-//        this.matricula = matricula;
-//        this.cargo = cargo;
-        setNome(nome);
-        setMatricula(matricula);
-        setCargo(cargo);
+        this.nome = nome;
+        this.matricula = matricula;
+        this.cargo = cargo;
     }
-	
-//	public void cadastro(String nome, String matricula, String cargo) {
-//		if(nome != "" && matricula != "" && cargo != "") {
-//			this.nome = nome;
-//			this.matricula = matricula;
-//			this.cargo = cargo;
-////			setNome(nome);
-////	        setMatricula(matricula);
-////	        setCargo(cargo);
-//		} else {
-//			System.out.println("Erro ao cadastrar funcionário, tente novamente!");
-//		}
-//	}
 
 	public String getNome() {
 		return nome;
