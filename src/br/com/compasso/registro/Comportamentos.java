@@ -1,4 +1,4 @@
-package registro;
+package br.com.compasso.registro;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -106,7 +106,7 @@ public class Comportamentos {
 							System.out.println("Ponto de entrada registrado no dia " + data);
 							System.out.println("Ponto de entrada registrado às: " + horaEntrada);
 							System.out.println("lista de pontos: " + listaPontos.size());
-						} else if (listaPontos.get(i).getHoraSaida().equals("")) {
+						} else if (listaPontos.get(i).getHoraSaida().equals("")) { // Registra o ponto de saída
 							listaPontos.get(i).setHoraSaida(horaSaida);
 							System.out.println("Ponto de saída registrado no dia " + data);
 							System.out.println("Ponto de saída registrado às: " + horaSaida);
@@ -123,7 +123,7 @@ public class Comportamentos {
 					}
 				} // Fim do for
 			} else {
-				// PRIMEIRO REGISTRO DO FUNCIONÁRIO
+				// PRIMEIRO REGISTRO DE PONTO COM A LISTA ESTANDO VAZIA
 				Ponto novoPonto = new Ponto(
 						listaFuncionarios.get(pos).getMatricula(), data);
 						novoPonto.setHoraEntrada(horaEntrada);
@@ -133,7 +133,7 @@ public class Comportamentos {
 			System.out.println("Ponto do(a) funcionário(a) " + listaFuncionarios.get(pos).getNome() + ".\nRegistrado na data: " + data
 					+ ". Horário: " + horaEntrada);
 			System.out.println("--------------------------------------");
-			
+			// FIM DO IF POS >= 0
 			} else {
 				System.out.println("Não existe nenhum funcionário com esta matrícula.");
 			}
@@ -153,7 +153,7 @@ public class Comportamentos {
 					System.out.println("...................................");
 					System.out.println(listaPontos.get(i).getDataRegistro() + "\nNome: "
 							+ listaPontos.get(i).getMatricula() + "\nEntrada: " + listaPontos.get(i).getHoraEntrada()
-							+ "\nSaÃ­da: " + listaPontos.get(i).getHoraSaida());
+							+ "\nSaída: " + listaPontos.get(i).getHoraSaida());
 				} else {
 					System.out.println("...................................");
 					System.out.println("Este funcionário ainda não registrou o ponto.!");

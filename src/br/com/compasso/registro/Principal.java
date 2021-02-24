@@ -1,4 +1,4 @@
-package registro;
+package br.com.compasso.registro;
 
 public class Principal {
 

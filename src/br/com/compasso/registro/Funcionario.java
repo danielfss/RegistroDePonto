@@ -1,4 +1,4 @@
-package registro;
+package br.com.compasso.registro;
 
 public class Funcionario {
 
@@ -48,7 +48,7 @@ public class Funcionario {
 	
 	@Override
 	public String toString() {
-		return "Funcionario: " + this.nome + "\nMatricula: " + this.matricula + "\nCargo: " + this.cargo;
+		return "\nFuncionario: " + this.nome + "\nMatricula: " + this.matricula + "\nCargo: \n" + this.cargo;
 	}
 	
 }
