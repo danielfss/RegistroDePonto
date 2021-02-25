@@ -48,7 +48,7 @@ public class Funcionario {
 	
 	@Override
 	public String toString() {
-		return "\nFuncionario: " + this.nome + "\nMatricula: " + this.matricula + "\nCargo: \n" + this.cargo;
+		return "\nFuncionario: " + this.nome + "\nMatricula: " + this.matricula + "\nCargo: " + this.cargo + "\n";
 	}
 	
 }

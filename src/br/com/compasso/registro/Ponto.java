@@ -42,4 +42,9 @@ public class Ponto {
 		this.horaSaida = horaSaida;
 	}
 	
+	@Override
+	public String toString() {
+		return "\nMatricula: " + this.matricula + "\nEntrada: " + this.horaEntrada + "\nSaida: " + this.horaSaida + "\n";
+	}
+	
 }
