@@ -103,14 +103,10 @@ public class Comportamentos {
 							&& listaPontos.get(i).getDataRegistro().equals(data)) {
 						if (listaPontos.get(i).getHoraEntrada().equals("")) {
 							listaPontos.get(i).setHoraEntrada(horaEntrada);
-							System.out.println("Ponto de entrada registrado no dia " + data);
-							System.out.println("Ponto de entrada registrado às: " + horaEntrada);
-							System.out.println("lista de pontos: " + listaPontos.size());
+
 						} else if (listaPontos.get(i).getHoraSaida().equals("")) { // Registra o ponto de saída
 							listaPontos.get(i).setHoraSaida(horaSaida);
-							System.out.println("Ponto de saída registrado no dia " + data);
-							System.out.println("Ponto de saída registrado às: " + horaSaida);
-							System.out.println("lista de pontos: " + listaPontos.size());
+
 						} else {
 							System.out.println("Você já registrou o ponto de entrada e saída de hoje.");
 						}
@@ -121,6 +117,7 @@ public class Comportamentos {
 								novoPonto.setHoraEntrada(horaEntrada);
 								listaPontos.add(novoPonto);
 					}
+					break;
 				} // Fim do for
 			} else {
 				// PRIMEIRO REGISTRO DE PONTO COM A LISTA ESTANDO VAZIA
