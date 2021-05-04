@@ -3,6 +3,7 @@
 Este projeto foi feito com o intuito de aprimorar o conhecimento em Java e POO.
 Durante o programa de bolsas da Compasso UOL, nosso instrutor Víctor Romário, passou o seguinte cenário:
 
+## Aplicação para Registro de Ponto
 Crie uma aplicação, utilizando a linguagem Java e o Paradigma Orientado a Objetos, que quando
 executada pergunte ao usuário se ele quer:
 a) Cadastrar um funcionário
