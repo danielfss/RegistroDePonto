@@ -115,7 +115,6 @@ public class Comportamentos {
 						} else {
 							System.out.println("Você já registrou o ponto de entrada e saída de hoje.");
 						}
-						break;
 					} else {
 						// CASO A LISTA JÁ TENHA REGISTROS
 						Ponto novoPonto = new Ponto(
